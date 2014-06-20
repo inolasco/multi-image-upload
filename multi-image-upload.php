@@ -1,15 +1,15 @@
 <?php
 
 /*
-  Plugin Name: Multi Image Uploader
-  Plugin URI: http://tahiryasin.wordpress.com/plugins/multi-image-upload/
+  Plugin Name: More Post Images
+  Plugin URI: https://github.com/inolasco/multi-image-upload
   Description: This plugin adds a meta box to upload multiple images for posts and pages.
-  Author: Tahir Yasin
+  Author: Ivan Nolasco
   Version: 1.0
-  Author URI: http://about.me/tahiryasin
+  Author URI: http://ivannolasco.com
  */
 
-/*  Copyright 2013  Tahir Yasin  (email : tahiryasin@outlook.com)
+/*
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by

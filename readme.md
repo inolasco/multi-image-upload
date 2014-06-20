@@ -1,9 +1,6 @@
 ### Multi Image Upload
-Contributors: tahiryasin
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=63N6XHBLFRC3U
-Tags: multi, image, upload, metabox
-Requires at least: 3.0
-Tested up to: 3.7.1
+Requires at least: 3.9
+Tested up to: 3.9.1
 Stable tag: 1.0
 License: GPLv2 or later
 
@@ -12,6 +9,10 @@ This plugin adds a meta box to upload multiple images for posts and pages.
 #### Description
 
 This plugin adds a meta box to upload multiple images for posts and pages. You can enable it for custom post types also, please see installation instructions.
+
+Use this plugin if you want to quickly add a feature to upload multiple images for a page, post or custom post type.
+
+Forked from [multi-image-upload](https://github.com/wp-plugins/multi-image-upload) by [tahiryasin](http://about.me/tahiryasin)
 
 #### Installation
 
@@ -28,36 +29,10 @@ With:
 `$this->post_types = array('post', 'page', 'book');`
 
 
-#### Frequently Asked Questions
-
-**Why should I use this plugin?**
-
-Use this plugin if you want to quickly add a feature to upload multiple images for a page, post or custom post type.
-
-#### Changelog
-= 1.0 =
-* First stable release.
-
-
-miu_get_images()
+    miu_get_images();
 
 This function can be called from any template file to get attached images for the page/post being viewed.
-It returns an array of the attached image URL.
+It returns an array of object with data for the attached image URL.
 
-It take only one argument: 
+It take only one argument, **post_id** (integer) to get images linked to a specific post.
 
-1. **post_id** (integer) to get images linked to a specific post
-
-        <?php 
-        $images = miu_get_images($post_id); 
-
-        // Sample output
-        Array(
-            [0] => http://www.example.com/image-1.png
-            [1] => http://www.example.com/image-2.png
-        )
-        ?>
-
-#### Upgrade Notice
-
-NA
