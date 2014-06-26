@@ -127,7 +127,7 @@ class Multi_Image_Uploader {
         /* OK, its safe for us to save the data now. */
 
         // Validate user input.
-        $posted_images = $_POST['miu_images'];
+        $posted_images = (ISSET($_POST['miu_images']) ? $_POST['miu_images'] : null);
 
         $miu_images = array();
 
